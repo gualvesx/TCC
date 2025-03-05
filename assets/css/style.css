@@ -11,7 +11,6 @@
     --font-base: "ClashDisplay", sans-serif;
     --box-shadow: 0px 15px 25px rgba(0,0,0,0.08);
     --transition: all 0.5s ease;
-    --c-begie:#ffffff;
 }
 
 
@@ -22,11 +21,6 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
-
-.begie{
-    --c-begie:#faedc9;
-}
-
 
 
 /* RESET & HELPERS */
@@ -89,8 +83,9 @@ img {
 
 /* NAVBAR */
 .navbar {
-    background-color:#ffffff ;
+    background-color: rgba(255, 255, 255, 0.8); /* Branco com 50% de transparência */
     box-shadow: var(--box-shadow);
+    backdrop-filter: blur(10px); /* Efeito de desfoque no fundo */
 }
 
 .line{
