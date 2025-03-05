@@ -11,24 +11,30 @@
     --font-base: "ClashDisplay", sans-serif;
     --box-shadow: 0px 15px 25px rgba(0,0,0,0.08);
     --transition: all 0.5s ease;
+    --c-begie:#faedc9;
 }
 
 
 /*Título principal*/
 .text-gradient {
-    background: linear-gradient(65deg, rgb(12, 129, 28), rgb(171, 173, 8));
+    background: linear-gradient(65deg, rgb(255, 244, 206), rgb(255, 244, 206));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+}
+
+.begie{
+    --c-begie:#faedc9;
 }
 
 
 
 /* RESET & HELPERS */
 body {
+    background-color: #ffffff;
     font-family: var(--font-base);
     line-height: 1.7;
-    color: var(--c-body);
+    color: 255, 244, 206;
 }
 
 h1, h2, h3,h4, h5, h6,
@@ -83,7 +89,12 @@ img {
 
 /* NAVBAR */
 .navbar {
+    background-color:#faedc9 ;
     box-shadow: var(--box-shadow);
+}
+
+.line{
+    background-color: #faedc9;
 }
 
 .navbar-nav .nav-link {
@@ -123,7 +134,7 @@ img {
 
 /* HERO */
 #hero {
-    background: linear-gradient(rgba(var(--c-brand-rgb), 0.507), rgba(var(--c-brand-rgb), 0.438)), url("https://s2-redeglobo.glbimg.com/VFnfZlNqO1w9SVS0XJ1BJTZOcos=/0x0:5448x3632/1008x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_e84042ef78cb4708aeebdf1c68c6cbd6/internal_photos/bs/2022/X/n/0ntL3DR4uswEWAyYLQjw/parque-do-povo-3.jpg");
+    background: linear-gradient(rgba(var(--c-brand-rgb), 0.507), rgba(var(--c-brand-rgb), 0.438)), url("https://turismodagente.com.br/wp-content/uploads/2023/01/Parque_do_Povo_2-800x600.jpg");
     background-position: center;
     background-size: cover;
 }
