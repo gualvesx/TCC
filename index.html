@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
 </head>
 
 <body data-bs-spy="scroll" data-bs-target=".navbar">
@@ -61,8 +62,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h1 data-aos="fade-left" class="text-uppercase text-gradient fw-semibold display-1">Seja bem-vindo ao ECOCITY</h1>
-                    <h5 class="text-white mt-3 mb-4" data-aos="fade-right">SOMOS UMA EQUIPE DE DESIGNERS TALENTOSOS QUE CRIAM SITES ECOLÓGICOS</h5>
+                    <h1 data-aos="fade-left" class="text-uppercase text-gradient fw-semibold display-1">Seja bem-vindo
+                        ao</h1>
+                        <h1 data-aos="fade-left" class="text-uppercase text-gradient2 fw-semibold display-1">ECO School</h1>
+                    <h5 class="text-white mt-3 mb-4" data-aos="fade-right">Transforme sua Escola, Transforme o Planeta!
+                    </h5>
                 </div>
             </div>
         </div>
@@ -76,25 +80,26 @@
                     <div class="section-title">
                         <h1 class="display-4 fw-semibold">Sobre nós</h1>
                         <div class="line"></div>
-                        <p>NÓS SOMOS UM GRUPO DE DESIGNERS QUE BUSCAM CRIAR SITES ECOLÓGICOS</p>
+                        <p>NÓS SOMOS UM GRUPO DE DEV'S QUE BUSCAM SOLUÇÕES ECOLÓGICAS</p>
                     </div>
                 </div>
             </div>
             <div class="row justify-content-between align-items-center">
                 <div class="col-lg-6" data-aos="fade-down" data-aos-delay="50">
-                    <img src="./assets/images/mapa.png" alt="" id="mapa">
+                    <div id="map" style="width: 100%; height: 400px; border-radius: 20%;"></div>
                 </div>
                 <div data-aos="fade-down" data-aos-delay="150" class="col-lg-5">
-                    <h1>Sobre ECOCITY</h1>
+                    <h1>ECOLOGIA</h1>
                     <!-- mudar essa imagem-->
-                    <p class="mt-3 mb-4">ECOCITY é um projeto de combate a poluição.</p>
+                    <p class="mt-3 mb-4">Um projeto de combate a poluição.</p>
                     <div class="d-flex pt-4 mb-3">
                         <div class="iconbox me-4">
                             <i><img src="assets/images/point.png" alt=""></i>
                         </div>
                         <div>
                             <h5>Encontre pontos de coleta próximos</h5>
-                            <p>Descubra locais adequados para descartar seus resíduos eletrônicos e recicláveis com nosso mapa interativo.</p> 
+                            <p>Descubra locais adequados para descartar seus resíduos eletrônicos e recicláveis com
+                                nosso Mapa Verde: Encontre, Recicle, Preserve!.</p>
                         </div>
                     </div>
                     <!-- Mudar essa imagem-->
@@ -104,7 +109,9 @@
                         </div>
                         <div>
                             <h5>Saiba como reciclar corretamente</h5>
-                            <p>Acesse informações detalhadas sobre a reciclagem de eletrônicos, seus impactos ambientais e como descartar cada tipo de resíduo da melhor forma.</p>
+                            <p>Acesse informações detalhadas sobre a reciclagem de eletrônicos, seus impactos ambientais
+                                e
+                                como descartar cada tipo de resíduo da melhor forma.</p>
                         </div>
                     </div>
                     <!-- Mudar essa imagem-->
@@ -114,13 +121,34 @@
                         </div>
                         <div>
                             <h5>Receba notificações e participe de eventos</h5>
-                            <p>Fique por dentro de campanhas, mutirões de reciclagem e iniciativas ambientais na sua cidade.</p>
+                            <p>Fique por dentro de campanhas, mutirões de reciclagem e iniciativas ambientais na sua
+                                cidade.
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- COUNTER -->
+    <section id="counter" class="section-padding d-flex align-items-center" 
+    style="background: url('https://images.pexels.com/photos/589802/pexels-photo-589802.jpeg?cs=srgb&dl=pexels-valiphotos-589802.jpg&fm=jpg') no-repeat center center/cover; height: 100vh;">
+    
+    <div class="container d-flex flex-column justify-content-center align-items-center text-center">
+        <div class="row g-4">
+            <div class="col-lg-12" data-aos="fade-down" data-aos-delay="250">
+                <div class="p-4 rounded" style="background: rgba(255, 255, 255, 0.6); backdrop-filter: blur(5px); border-radius: 10px;">
+                    <h1 class="text-dark display-6">Educação e Sustentabilidade Caminham Juntas</h1>
+                    <h6 class="text-uppercase mb-0 text-dark mt-3">Cada Ponto de Coleta, Um Passo para o Futuro!</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    
 
     <!-- serviços -->
     <section id="services" class="section-padding border-top">
@@ -130,7 +158,6 @@
                     <div class="section-title">
                         <h1 class="display-4 fw-semibold">SERVIÇOS</h1>
                         <div class="line"></div>
-                        <p>Nossos serviços</p>
                     </div>
                 </div>
             </div>
@@ -192,7 +219,8 @@
                             <i class="ri-user-2-fill"></i>
                         </div>
                         <h5 class="mt-4 mb-3">Denúncias e Solicitações</h5>
-                        <p>Espaço para relatar descarte irregular na cidade e solicitação de instalação de novos pontos de coleta.</p>
+                        <p>Espaço para relatar descarte irregular na cidade e solicitação de instalação de novos pontos
+                            de coleta.</p>
                     </div>
                 </div>
             </div>
@@ -216,13 +244,15 @@
                         <div class="image-zoom-wrapper">
                             <img src="assets/images/project-1.png" alt="">
                         </div>
-                        <a href="assets/images/project-1.png" data-fancybox="gallery" class="iconbox"><i class="ri-search-2-line"></i></a>
+                        <a href="assets/images/project-1.png" data-fancybox="gallery" class="iconbox"><i
+                                class="ri-search-2-line"></i></a>
                     </div>
                     <div class="portfolio-item image-zoom mt-4">
                         <div class="image-zoom-wrapper">
                             <img src="assets/images/project-2.png" alt="">
                         </div>
-                        <a href="assets/images/project-2.png" data-fancybox="gallery" class="iconbox"><i class="ri-search-2-line"></i></a>
+                        <a href="assets/images/project-2.png" data-fancybox="gallery" class="iconbox"><i
+                                class="ri-search-2-line"></i></a>
                     </div>
                 </div>
                 <div class="col-md-4" data-aos="fade-down" data-aos-delay="250">
@@ -230,27 +260,32 @@
                         <div class="image-zoom-wrapper">
                             <img src="assets/images/project-3.png" alt="">
                         </div>
-                        <a href="assets/images/project-3.png" data-fancybox="gallery" class="iconbox"><i class="ri-search-2-line"></i></a>
+                        <a href="assets/images/project-3.png" data-fancybox="gallery" class="iconbox"><i
+                                class="ri-search-2-line"></i></a>
                     </div>
                     <div class="portfolio-item image-zoom mt-4">
                         <div class="image-zoom-wrapper">
                             <img src="assets/images/project-4.png" alt="">
                         </div>
-                        <a href="assets/images/project-4.png" data-fancybox="gallery" class="iconbox"><i class="ri-search-2-line"></i></a>
+                        <a href="assets/images/project-4.png" data-fancybox="gallery" class="iconbox"><i
+                                class="ri-search-2-line"></i></a>
                     </div>
                 </div>
                 <div class="col-md-4" data-aos="fade-down" data-aos-delay="350">
                     <div class="portfolio-item image-zoom">
                         <div class="image-zoom-wrapper">
-                            <img src="https://greeneletron.org.br/blog/wp-content/uploads/2022/07/reciclagem2.jpg" alt="">
+                            <img src="https://greeneletron.org.br/blog/wp-content/uploads/2022/07/reciclagem2.jpg"
+                                alt="">
                         </div>
-                        <a href="https://greeneletron.org.br/blog/wp-content/uploads/2022/07/reciclagem2.jpg" data-fancybox="gallery" class="iconbox"><i class="ri-search-2-line"></i></a>
+                        <a href="https://greeneletron.org.br/blog/wp-content/uploads/2022/07/reciclagem2.jpg"
+                            data-fancybox="gallery" class="iconbox"><i class="ri-search-2-line"></i></a>
                     </div>
                     <div class="portfolio-item image-zoom mt-4">
                         <div class="image-zoom-wrapper">
                             <img src="assets/images/project-6.png" alt="">
                         </div>
-                        <a href="assets/images/project-6.png" data-fancybox="gallery" class="iconbox"><i class="ri-search-2-line"></i></a>
+                        <a href="assets/images/project-6.png" data-fancybox="gallery" class="iconbox"><i
+                                class="ri-search-2-line"></i></a>
                     </div>
                 </div>
             </div>
@@ -274,7 +309,8 @@
                 <div class="col-md-4" data-aos="fade-down" data-aos-delay="150">
                     <div class="team-member image-zoom">
                         <div class="image-zoom-wrapper">
-                            <img src="https://t4.ftcdn.net/jpg/00/65/77/27/360_F_65772719_A1UV5kLi5nCEWI0BNLLiFaBPEkUbv5Fv.jpg" alt="">
+                            <img src="https://t4.ftcdn.net/jpg/00/65/77/27/360_F_65772719_A1UV5kLi5nCEWI0BNLLiFaBPEkUbv5Fv.jpg"
+                                alt="">
                         </div>
                         <div class="team-member-content">
                             <h4 class="text-white">Sidney</h4>
@@ -285,7 +321,8 @@
                 <div class="col-md-4" data-aos="fade-down" data-aos-delay="250">
                     <div class="team-member image-zoom">
                         <div class="image-zoom-wrapper">
-                            <img src="https://t4.ftcdn.net/jpg/00/65/77/27/360_F_65772719_A1UV5kLi5nCEWI0BNLLiFaBPEkUbv5Fv.jpg" alt="">
+                            <img src="https://t4.ftcdn.net/jpg/00/65/77/27/360_F_65772719_A1UV5kLi5nCEWI0BNLLiFaBPEkUbv5Fv.jpg"
+                                alt="">
                         </div>
                         <div class="team-member-content">
                             <h4 class="text-white">Gustavo</h4>
@@ -296,7 +333,8 @@
                 <div class="col-md-4" data-aos="fade-down" data-aos-delay="350">
                     <div class="team-member image-zoom">
                         <div class="image-zoom-wrapper">
-                            <img src="https://t4.ftcdn.net/jpg/00/65/77/27/360_F_65772719_A1UV5kLi5nCEWI0BNLLiFaBPEkUbv5Fv.jpg" alt="">
+                            <img src="https://t4.ftcdn.net/jpg/00/65/77/27/360_F_65772719_A1UV5kLi5nCEWI0BNLLiFaBPEkUbv5Fv.jpg"
+                                alt="">
                         </div>
                         <div class="team-member-content">
                             <h4 class="text-white">Ana Lara</h4>
@@ -318,12 +356,9 @@
                     <div class="col-lg-3 col-sm-6">
                         <a href="#"><img src="./assets/images/logo1.png" alt=""></a>
                         <div class="line"></div>
-                        <p>ECOCITY sempre buscando o melhor pra você e para o Mundo.</p>
+                        <p>ECO SCHOOL sempre buscando o melhor pra você e para o Mundo.</p>
                         <div class="social-icons">
-                            <a href="#"><i class="ri-twitter-fill"></i></a>
-                            <a href="#"><i class="ri-instagram-fill"></i></a>
-                            <a href="#"><i class="ri-github-fill"></i></a>
-                            <a href="#"><i class="ri-dribbble-fill"></i></a>
+                            <a href="https://github.com/gualvesx/TCC.git"><i class="ri-github-fill"></i></a>
                         </div>
                     </div>
                     <div class="col-lg-3 col-sm-6">
@@ -352,7 +387,7 @@
                         <ul>
                             <li>Presidente P.</li>
                             <li>(18) 98712 - 2539</li>
-                            <li>www.example.com</li>
+                            <li>gustavo.sesi.bol@gmail.com</li>
                         </ul>
                     </div>
                 </div>
@@ -362,7 +397,7 @@
             <div class="container">
                 <div class="row g-4 justify-content-between">
                     <div class="col-auto">
-                        <p class="mb-0">© Copyright ECOCITY All Rights Reserved</p>
+                        <p class="mb-0">© Copyright ECO SCHOOL All Rights Reserved</p>
                     </div>
                     <div class="col-auto">
                         <p class="mb-0">Designed By GUSTAVO</p>
@@ -375,7 +410,7 @@
 
 
 
-
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

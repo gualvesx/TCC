@@ -22,6 +22,16 @@
     background-clip: text;
 }
 
+.text-gradient2 {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    background-color: rgba(255, 255, 255, 0.7); /* Branco com 50% de transparência */
+    box-shadow: var(--box-shadow);
+
+}
+
+
 
 /* RESET & HELPERS */
 body {
@@ -129,7 +139,7 @@ img {
 
 /* HERO */
 #hero {
-    background: linear-gradient(rgba(var(--c-brand-rgb), 0.507), rgba(var(--c-brand-rgb), 0.438)), url("https://turismodagente.com.br/wp-content/uploads/2023/01/Parque_do_Povo_2-800x600.jpg");
+    background: linear-gradient(rgba(var(--c-brand-rgb), 0.507), rgba(var(--c-brand-rgb), 0.438)), url("https://images.pexels.com/photos/1632790/pexels-photo-1632790.jpeg?cs=srgb&dl=pexels-jplenio-1632790.jpg&fm=jpg");
     background-position: center;
     background-size: cover;
 }
