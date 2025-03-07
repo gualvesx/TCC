@@ -45,3 +45,27 @@ document.addEventListener("DOMContentLoaded", function () {
   L.marker([-22.1206, -51.4059], { icon: pointIcon }).addTo(map)
     .bindPopup("📍 Ponto de Coleta - SENAI Presidente Prudente");
 });
+
+document.getElementById("map-container").addEventListener("click", function () {
+  let mapDiv = document.getElementById("map");
+  let container = document.getElementById("map-container");
+
+  if (!container.classList.contains("expanded")) {
+      // Expandindo o mapa
+      container.classList.add("expanded");
+      container.style.position = "fixed";
+      container.style.top = "0";
+      container.style.left = "0";
+      container.style.width = "100vw";
+      container.style.height = "100vh";
+      container.style.zIndex = "9999";
+      mapDiv.style.borderRadius = "0"; // Removendo o border-radius ao expandir
+  } else {
+      // Revertendo a expansão
+      container.classList.remove("expanded");
+      container.style.position = "relative";
+      container.style.width = "100%";
+      container.style.height = "400px";
+      mapDiv.style.borderRadius = "10%"; // Restaurando o border-radius
+  }
+});

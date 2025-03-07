@@ -131,9 +131,9 @@ img {
 
 
 .btn-brand:hover {
-    background-color: rgb(128, 105, 79);
-    border-color:rgb(128, 105, 79);
-    color: white;
+    background-color: rgb(255, 255, 255);
+    border-color:rgb(12, 129, 28);
+    color: rgb(12, 129, 28);
 }
 
 
@@ -185,6 +185,7 @@ img {
 }
 
 .service::after {
+    border-radius: 5%;
     content: "";
     width: 40px;
     height: 40px;
